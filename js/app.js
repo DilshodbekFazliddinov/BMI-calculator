@@ -31,6 +31,6 @@ formEl.addEventListener("submit", (e) => {
   } else if (bmi >= 40) {
     label3.textContent = `${ism} Siz vapwe kamnavosiz ozishga harakat qiling😊`;
     label3.style.background = "orange";
-    img.src = "../img/under.jpg";
+    img.src = "../img/pla.jpg";
   }
 });
