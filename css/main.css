@@ -8,9 +8,29 @@ body {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  height: 100vh;
+  /* height: 100vh; */
   background-image: linear-gradient(#aa076b, #61045f);
 }
+.card {
+  width: 400px;
+}
+@media (max-width: 900px) {
+  body {
+    gap: 25px;
+  }
+  .card {
+    width: 350px;
+  }
+}
+@media (max-width: 730px) {
+  body {
+    flex-direction: column;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
 .result {
   display: flex;
   align-items: center;

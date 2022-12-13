@@ -1,10 +1,17 @@
-const btn = document.querySelector(".sub");
+const btn = document.querySelector(".btn");
 const body = document.querySelector("body");
 const formEl = document.querySelector("form");
 const label = document.querySelector(".label");
 const label2 = document.querySelector(".label2");
 const label3 = document.querySelector(".label3");
 const img = document.querySelector(".result-img");
+const res_card = document.querySelector(".result-card");
+const prim_card = document.querySelector(".prim-card");
+
+btn.addEventListener("click", () => {
+  res_card.classList.toggle("hidden");
+  prim_card.classList.toggle("hidden");
+});
 
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
